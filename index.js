@@ -12,13 +12,13 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(express.json());
 
-initializeDBConnection();
+// initializeDBConnection();
 
 app.get('/', async (req, res) => {
     try {
 
-        const posts = await Post.find();
-        console.log(posts);
+        // const posts = await Post.find();
+        // console.log(posts);
 
         // User.findOne({ name: 'Gaurav' }).populate('posts')
         //     .exec((err, user) => {
